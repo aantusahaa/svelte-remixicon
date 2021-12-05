@@ -54,6 +54,8 @@ However, four components were named slightly differently because their PascalCas
 - `ri-24-hours-fill` ⇒ `TwentyFourHoursFill`
 - `ri-4k-line` ⇒ `FourKLine`
 - `ri-4k-fill` ⇒ `FourKFill`
+- `ri-book-mark-fill` ⇒ `BookBookMarkFill`
+- `ri-book-mark-line` ⇒ `BookBookMarkLine`
 
 ## Available Props in Components
 
