@@ -37,6 +37,9 @@ const pascalCaseName = (name) => {
   if (invalidName) {
     name = name.replace(invalidName[0], `${convert(invalidName[0])}-`);
   }
+  if(name === 'book-mark-fill' || name === 'book-mark-line'){
+    name = name.replace('book-mark', 'book-book-mark');
+  }
   return pascalCase(name, {
     transform: pascalCaseTransformMerge,
   });
