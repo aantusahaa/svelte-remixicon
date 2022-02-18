@@ -5,11 +5,11 @@
   "author": {
     "name": "Antu Saha",
     "email": "imantu09@gmail.com",
-    "url": "https://github.com/ABarnob"
+    "url": "https://github.com/aantusahaa"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ABarnob/svelte-remixicon"
+    "url": "https://github.com/aantusahaa/svelte-remixicon"
   },
   "svelte": "lib/index.js",
   "module": "lib/dist/index.mjs",
