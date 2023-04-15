@@ -1,14 +1,18 @@
-# svelte-remixicon
+# svelte-remixicon: A vibrant icon library for your Svelte/SvelteKit app
 
-An icon library for svelte based on [Remix Icon](https://github.com/Remix-Design/remixicon). Consists of more than 2000 icons.
+If you're looking for a way to add visually stunning icons to your Svelte/SvelteKit project, you're in luck! `svelte-remixicon` is a comprehensive icon library built with the popular [Remix Icon](https://github.com/Remix-Design/remixicon) pack. With a total of 2443 icons available, you'll have plenty of options to choose from to bring some color and personality to your app.
 
-## Install
+## Easy installation
+
+Getting started with `svelte-remixicon` is a breeze. All you have to do is run the following command:
 
 ```bash
 npm install --save-dev svelte-remixicon
 ```
 
-## Usage
+## Simple usage
+
+Using `svelte-remixicon` couldn't be simpler. Just import the icons you want to use, and you're ready to go! For example:
 
 ```html
 <script>
@@ -26,9 +30,11 @@ Almost every icon has two variants. One is line: <RemixiconLine /> and the other
 is fill: <RemixiconFill />
 ```
 
-For all the available icons visit [Remix Icon website](https://remixicon.com/).
+And that's it! You can check out all the available icons on the [Remix Icon website](https://remixicon.com/).
 
-### Using Custom Class
+### Custom styling
+
+If you want to customize the appearance of your icons, you can easily do so by adding your own classes to the icon components. For example:
 
 ```html
 <style>
@@ -40,9 +46,9 @@ For all the available icons visit [Remix Icon website](https://remixicon.com/).
 <RemixiconLine class="xyz" />
 ```
 
-## Component Naming
+## Component naming
 
-The class name available for each icon (from the website) was converted to PascalCase without the `ri-` prefix and used as the component name.
+To make it easy to find the icons you need, we've used the same names as the original Remix Icon library, with one exception. We've modified the names slightly to use PascalCase and remove the `ri-` prefix. For example:
 
 - `ri-home-line` ⇒ `HomeLine`
 - `ri-message-3-fill` ⇒ `Message3Fill`
@@ -54,10 +60,15 @@ However, four components were named slightly differently because their PascalCas
 - `ri-24-hours-fill` ⇒ `TwentyFourHoursFill`
 - `ri-4k-line` ⇒ `FourKLine`
 - `ri-4k-fill` ⇒ `FourKFill`
+
+And this one because there are two icons with the name `bookmark` and `book-mark`.
+
 - `ri-book-mark-fill` ⇒ `BookBookMarkFill`
 - `ri-book-mark-line` ⇒ `BookBookMarkLine`
 
-## Available Props in Components
+## Available props
+
+Each icon component comes with a range of available props to customize its appearance. These include:
 
 | prop name | default value  | usable value                                | description                                     |
 | --------- | -------------- | ------------------------------------------- | ----------------------------------------------- |
@@ -69,8 +80,10 @@ However, four components were named slightly differently because their PascalCas
 
 ### Forwarded event
 
+svelte-remixicon components also forward the following events for you to use in your app:
+
 - on:click
 
 ## License
 
-`svelte-remixicon` is licensed under the [MIT License](https://github.com/ABarnob/svelte-remixicon/blob/main/LICENSE).
+`svelte-remixicon` is licensed under the [MIT License](https://github.com/aantusahaa/svelte-remixicon/blob/main/LICENSE).

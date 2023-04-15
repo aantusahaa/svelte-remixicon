@@ -1,7 +1,7 @@
 {
   "name": "svelte-remixicon",
-  "description": "An icon library for svelte based on Remix Icon. Consists of more than 2000 icons.",
-  "version": "1.0.1",
+  "description": "An icon library for Svelte/SvelteKit based on Remix Icon. Consists of more than 2400 icons.",
+  "version": "1.1.0",
   "author": {
     "name": "Antu Saha",
     "email": "imantu09@gmail.com",
@@ -34,6 +34,7 @@
   },
   "keywords": [
     "svelte",
+    "sveltekit",
     "remixicon",
     "svg icon"
   ]

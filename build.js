@@ -37,7 +37,9 @@ const pascalCaseName = (name) => {
   if (invalidName) {
     name = name.replace(invalidName[0], `${convert(invalidName[0])}-`);
   }
-  if(name === 'book-mark-fill' || name === 'book-mark-line'){
+
+  // To avoid naming collision between `bookmark` and `book-mark`
+  if (name === 'book-mark-fill' || name === 'book-mark-line') {
     name = name.replace('book-mark', 'book-book-mark');
   }
   return pascalCase(name, {
@@ -54,7 +56,7 @@ let type =
   const symbols = $('symbol');
 
   symbols.each(function (i, e) {
-    const path = $(this).children().html().trim().replaceAll('\n', '');
+    const path = $(this).html().replace('\n', '');
     const id = $(this).attr('id').replace('ri-', '');
     iconObject[id] = path;
   });
