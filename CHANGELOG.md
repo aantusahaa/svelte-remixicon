@@ -1,3 +1,7 @@
+# 1.5.0
+
+- New Icons! ([Check Remixicon changelog from 3.4.0 to 3.5.0](https://github.com/Remix-Design/RemixIcon/releases))
+
 # 1.3.0
 
 - New Icons! ([Check Remixicon changelog v3.3.0](https://github.com/Remix-Design/RemixIcon/releases/tag/v3.3.0))
