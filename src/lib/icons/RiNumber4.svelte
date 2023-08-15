@@ -1,0 +1,22 @@
+<script lang="ts">
+export let size = '1em';
+export let color = 'currentColor';
+export let label= '';
+let customClass = '';
+export { customClass as class };
+</script>
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 24 24"
+width={size}
+height={size}
+fill={color}
+aria-label={label ? label : undefined}
+aria-hidden={!label ? 'true' : undefined}
+role={label ? 'img' : undefined}
+class="remixicon ri-number-4 {customClass}"
+{...$$restProps}
+>
+<path d="M16.0001 1.5L16 16H19.0001V18H16L16.0001 22H14.0001L14 18H4V16.898L14.0001 1.5H16.0001ZM14 16V5.171L6.968 16H14Z"></path>
+</svg>

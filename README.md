@@ -16,18 +16,11 @@ Using `svelte-remixicon` couldn't be simpler. Just import the icons you want to 
 
 ```html
 <script>
-  import { RemixiconLine, RemixiconFill } from 'svelte-remixicon';
+  import { RiRemixiconLine, RiRemixiconFill } from 'svelte-remixicon';
 </script>
 
-<!-- OR (Recommended for faster compile) -->
-
-<script>
-  import RemixiconLine from 'svelte-remixicon/lib/icons/RemixiconLine.svelte';
-  import RemixiconFill from 'svelte-remixicon/lib/icons/RemixiconFill.svelte';
-</script>
-
-Almost every icon has two variants. One is line: <RemixiconLine /> and the other
-is fill: <RemixiconFill />
+Almost every icon has two variants. One is line: <RiRemixiconLine /> and the
+other is fill: <RiRemixiconFill />
 ```
 
 And that's it! You can check out all the available icons on the [Remix Icon website](https://remixicon.com/).
@@ -43,46 +36,36 @@ If you want to customize the appearance of your icons, you can easily do so by a
   }
 </style>
 
-<RemixiconLine class="xyz" />
+<RiRemixiconLine class="xyz" />
 ```
+
+You will also find the class `remixicon` and `ri-<icon-name>` on the svg element by default. You can use them to style the icons as well.
 
 ## Component naming
 
-To make it easy to find the icons you need, we've used the same names as the original Remix Icon library, with one exception. We've modified the names slightly to use PascalCase and remove the `ri-` prefix. For example:
+To make it easy to find the icons you need, we've used the same names as the original Remix Icon library. For example:
 
-- `ri-home-line` ⇒ `HomeLine`
-- `ri-message-3-fill` ⇒ `Message3Fill`
+- `ri-home-line` ⇒ `RiHomeLine`
+- `ri-message-3-fill` ⇒ `RiMessage3Fill`
 - and so on...
 
-However, four components were named slightly differently because their PascalCase version was not a valid identifier.
+With one exception. Because there are two icons with the name `bookmark` and `book-mark` it creates naming conflict. Thus modified one of them. i.e.
 
-- `ri-24-hours-line` ⇒ `TwentyFourHoursLine`
-- `ri-24-hours-fill` ⇒ `TwentyFourHoursFill`
-- `ri-4k-line` ⇒ `FourKLine`
-- `ri-4k-fill` ⇒ `FourKFill`
-
-And this one because there are two icons with the name `bookmark` and `book-mark`.
-
-- `ri-book-mark-fill` ⇒ `BookBookMarkFill`
-- `ri-book-mark-line` ⇒ `BookBookMarkLine`
+- `ri-book-mark-fill` ⇒ `RiBookBookMarkFill`
+- `ri-book-mark-line` ⇒ `RiBookBookMarkLine`
 
 ## Available props
 
 Each icon component comes with a range of available props to customize its appearance. These include:
 
-| prop name | default value  | usable value                                | description                                     |
-| --------- | -------------- | ------------------------------------------- | ----------------------------------------------- |
-| size      | `1em`          | any valid `width/height` attribute          | determines the `width` and `height` of the icon |
-| color     | `currentColor` | any valid `color` value for svg             | determines the `fill` of the icon               |
-| class     | `''`           | any valid string for html `class` attribute | custom class for custom styling                 |
+| prop name | default value  | usable value                                | description                                                                                                                                                                                                                     |
+| --------- | -------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| size      | `1em`          | any valid `width/height` attribute          | determines the `width` and `height` of the icon                                                                                                                                                                                 |
+| color     | `currentColor` | any valid `color` value for svg             | determines the `fill` of the icon                                                                                                                                                                                               |
+| class     | `''`           | any valid string for html `class` attribute | custom class for custom styling                                                                                                                                                                                                 |
+| label     | `''`           | any string to be used as `aria-label`       | should be used when the svg icon is used as an image/graphic element. It will also add `role="img"` to the svg element. If not passed then `aria-hidden="true"` will be added to the svg element to hide it from screen readers |
 
 `$$restProps` was also passed down.
-
-### Forwarded event
-
-svelte-remixicon components also forward the following events for you to use in your app:
-
-- on:click
 
 ## License
 

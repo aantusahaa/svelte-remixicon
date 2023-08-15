@@ -1,7 +1,8 @@
 {
   "name": "svelte-remixicon",
   "description": "An icon library for Svelte/SvelteKit based on Remix Icon. Consists of more than 2500 icons.",
-  "version": "1.5.0",
+  "version": "2.0.0",
+  "license": "MIT",
   "author": {
     "name": "Antu Saha",
     "email": "imantu09@gmail.com",
@@ -11,31 +12,50 @@
     "type": "git",
     "url": "https://github.com/aantusahaa/svelte-remixicon"
   },
-  "svelte": "lib/index.js",
-  "module": "lib/dist/index.mjs",
-  "main": "lib/dist/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib/"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "node build && rollup -c",
-    "prepublishOnly": "npm run build"
-  },
-  "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "cheerio": "^1.0.0-rc.10",
-    "number-words": "^1.1.1",
-    "pascal-case": "^3.1.2",
-    "rollup": "^2.55.0",
-    "rollup-plugin-svelte": "^7.1.0",
-    "svelte": "^3.3.0"
-  },
   "keywords": [
     "svelte",
     "sveltekit",
     "remixicon",
-    "svg icon"
-  ]
+    "svg icon",
+    "icon library",
+    "icon"
+  ],
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && npm run package",
+    "preview": "vite preview",
+    "package": "node build && svelte-kit sync && svelte-package && publint",
+    "prepublishOnly": "npm run package",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.spec.*"
+  ],
+  "peerDependencies": {
+    "svelte": "^3.54.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/kit": "^1.20.4",
+    "@sveltejs/package": "^2.0.0",
+    "pascal-case": "^3.1.2",
+    "publint": "^0.1.9",
+    "svelte": "^4.0.5",
+    "svelte-check": "^3.4.3",
+    "tslib": "^2.4.1",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.2"
+  },
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module"
 }

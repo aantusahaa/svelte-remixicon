@@ -1,0 +1,22 @@
+<script lang="ts">
+export let size = '1em';
+export let color = 'currentColor';
+export let label= '';
+let customClass = '';
+export { customClass as class };
+</script>
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 24 24"
+width={size}
+height={size}
+fill={color}
+aria-label={label ? label : undefined}
+aria-hidden={!label ? 'true' : undefined}
+role={label ? 'img' : undefined}
+class="remixicon ri-speed-fill {customClass}"
+{...$$restProps}
+>
+<path d="M12 13.3332L2.77735 19.4816C2.54759 19.6348 2.23715 19.5727 2.08397 19.3429C2.02922 19.2608 2 19.1643 2 19.0656V4.93408C2 4.65794 2.22386 4.43408 2.5 4.43408C2.59871 4.43408 2.69522 4.4633 2.77735 4.51806L12 10.6665V4.93408C12 4.65794 12.2239 4.43408 12.5 4.43408C12.5987 4.43408 12.6952 4.4633 12.7774 4.51806L23.376 11.5838C23.6057 11.737 23.6678 12.0474 23.5146 12.2772C23.478 12.3321 23.4309 12.3792 23.376 12.4158L12.7774 19.4816C12.5476 19.6348 12.2372 19.5727 12.084 19.3429C12.0292 19.2608 12 19.1643 12 19.0656V13.3332Z"></path>
+</svg>

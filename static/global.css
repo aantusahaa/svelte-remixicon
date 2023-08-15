@@ -1,0 +1,11 @@
+body {
+  display: grid;
+  place-items: center;
+  min-block-size: 100dvh;
+  margin: 0;
+  background: radial-gradient(
+    circle,
+    hsl(0, 0%, 100%) 50%,
+    hsla(205.2, 81.3%, 58%, 0.31) 100%
+  );
+}
