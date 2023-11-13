@@ -60,5 +60,6 @@ let main = '';
     main += `export { default as ${iconName} } from './icons/${iconName}.svelte';\n`;
   }
 
+  console.log('Building index.js...');
   await writeFile(indexPath, main);
 })();

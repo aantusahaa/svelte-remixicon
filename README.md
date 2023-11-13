@@ -19,6 +19,13 @@ Using `svelte-remixicon` couldn't be simpler. Just import the icons you want to 
   import { RiRemixiconLine, RiRemixiconFill } from 'svelte-remixicon';
 </script>
 
+<!-- Or (Recommended for faster compilation in dev mode)-->
+
+<script>
+  import RiRemixiconLine from 'svelte-remixicon/RiRemixiconLine.svelte';
+  import RiRemixiconFill from 'svelte-remixicon/RiRemixiconLineFill.svelte';
+</script>
+
 Almost every icon has two variants. One is line: <RiRemixiconLine /> and the
 other is fill: <RiRemixiconFill />
 ```
@@ -66,6 +73,24 @@ Each icon component comes with a range of available props to customize its appea
 | label     | `''`           | any string to be used as `aria-label`       | should be used when the svg icon is used as an image/graphic element. It will also add `role="img"` to the svg element. If not passed then `aria-hidden="true"` will be added to the svg element to hide it from screen readers |
 
 `$$restProps` was also passed down.
+
+## Using events
+
+The icon components themselves do not propagate events. Non-interactive elements should not have such events that rely on user interaction. If you wish to capture a `click` event on an icon, it is recommended to enclose the icon within a `button` or `a` tag and attach the event handler to that container.
+
+```html
+<script>
+  import RiRemixiconLine from 'svelte-remixicon/RiRemixiconLine.svelte';
+
+  function handleClick() {
+    console.log('Icon clicked!');
+  }
+</script>
+
+<button on:click="{handleClick}">
+  <RiRemixiconLine />
+</button>
+```
 
 ## License
 

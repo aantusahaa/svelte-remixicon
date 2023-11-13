@@ -1,3 +1,8 @@
+# 2.1.0
+
+- Brought back direct imports of components! Apparently I was wrong, sorry! :(
+- A section has been added to the README on usage of events.
+
 # 2.0.0
 
 - Svelte 4 support!

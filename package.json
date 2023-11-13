@@ -1,8 +1,9 @@
 {
   "name": "svelte-remixicon",
   "description": "An icon library for Svelte/SvelteKit based on Remix Icon. Consists of more than 2500 icons.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "MIT",
+  "main": "dist/index.js",
   "author": {
     "name": "Antu Saha",
     "email": "imantu09@gmail.com",
@@ -33,6 +34,20 @@
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
+    },
+    "./*.svelte": {
+      "types": "./dist/icons/*.svelte.d.ts",
+      "svelte": "./dist/icons/*.svelte"
+    }
+  },
+  "typesVersions": {
+    ">4.0": {
+      ".": [
+        "./dist/index.d.ts"
+      ],
+      "*.svelte": [
+        "./dist/icons/*.svelte.d.ts"
+      ]
     }
   },
   "files": [
