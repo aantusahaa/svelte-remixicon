@@ -1,6 +1,6 @@
 # svelte-remixicon: A vibrant icon library for your Svelte/SvelteKit app
 
-If you're looking for a way to add visually stunning icons to your Svelte/SvelteKit project, you're in luck! `svelte-remixicon` is a comprehensive icon library built with the popular [Remix Icon](https://github.com/Remix-Design/remixicon) pack. With a total of 2537 icons available, you'll have plenty of options to choose from to bring some color and personality to your app.
+If you're looking for a way to add visually stunning icons to your Svelte/SvelteKit project, you're in luck! `svelte-remixicon` is a comprehensive icon library built with the popular [Remix Icon](https://github.com/Remix-Design/remixicon) pack. With a total of 2704 icons available, you'll have plenty of options to choose from to bring some color and personality to your app.
 
 ## Easy installation
 
@@ -55,11 +55,6 @@ To make it easy to find the icons you need, we've used the same names as the ori
 - `ri-home-line` ⇒ `RiHomeLine`
 - `ri-message-3-fill` ⇒ `RiMessage3Fill`
 - and so on...
-
-With one exception. Because there are two icons with the name `bookmark` and `book-mark` it creates naming conflict. Thus modified one of them. i.e.
-
-- `ri-book-mark-fill` ⇒ `RiBookBookMarkFill`
-- `ri-book-mark-line` ⇒ `RiBookBookMarkLine`
 
 ## Available props
 

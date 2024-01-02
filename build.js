@@ -34,10 +34,6 @@ ${pathMarkup}
 `;
 };
 const pascalCaseName = (name) => {
-  // To avoid naming collision between `bookmark` and `book-mark`
-  if (name === 'book-mark-fill' || name === 'book-mark-line') {
-    name = name.replace('book-mark', 'book-book-mark');
-  }
   return pascalCase('ri-' + name, {
     transform: pascalCaseTransformMerge,
   });

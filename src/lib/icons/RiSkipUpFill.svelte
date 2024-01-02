@@ -18,5 +18,5 @@ role={label ? 'img' : undefined}
 class="remixicon ri-skip-up-fill {customClass}"
 {...$$restProps}
 >
-<path d="M6 7 18 7V9L6 9 6 7ZM12 11 18 17H6L12 11Z"></path>
+<path d="M6 7 18 7V9L6 9 6 7ZM12 11 6 17H18L12 11Z"></path>
 </svg>

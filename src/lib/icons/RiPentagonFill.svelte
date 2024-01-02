@@ -18,5 +18,5 @@ role={label ? 'img' : undefined}
 class="remixicon ri-pentagon-fill {customClass}"
 {...$$restProps}
 >
-<path d="M11.9999 0.700195L22.7468 8.5083L18.6418 21.1421H5.35789L1.25293 8.5083L11.9999 0.700195Z"></path>
+<path d="M12.0001 0.700195L22.7471 8.5083L18.6421 21.1421H5.35814L1.25317 8.5083L12.0001 0.700195Z"></path>
 </svg>

@@ -1,3 +1,7 @@
+# 2.2.0
+
+- New Icons! ([Check Remixicon changelog from 3.6.0 to 4.0.0](https://github.com/Remix-Design/RemixIcon/releases))
+
 # 2.1.0
 
 - Brought back direct imports of components! Apparently I was wrong, sorry! :(

@@ -18,5 +18,5 @@ role={label ? 'img' : undefined}
 class="remixicon ri-arrow-right-up-fill {customClass}"
 {...$$restProps}
 >
-<path d="M13.0506 12.361L7.39371 18.0179L5.97949 16.6037L11.6363 10.9468L6.6866 5.99707H18.0003V17.3108L13.0506 12.361Z"></path>
+<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z"></path>
 </svg>
