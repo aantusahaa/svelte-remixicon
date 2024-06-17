@@ -1,7 +1,7 @@
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { pascalCase, pascalCaseTransformMerge } from 'pascal-case';
-import iconObject from './remixicon.glyph.json' assert { type: 'json' };
+import iconObject from './remixicon.glyph.json' with { type: 'json' };
 
 const indexPath = path.resolve('./src/lib/index.js');
 const iconDir = path.resolve('./src/lib/icons');
