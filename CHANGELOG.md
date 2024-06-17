@@ -1,3 +1,7 @@
+# 2.4.1
+
+- Add svelte 5 as peer dependency.
+
 # 2.4.0
 
 - New Icons! ([Check Remixicon changelog v4.2.0](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.2.0))
