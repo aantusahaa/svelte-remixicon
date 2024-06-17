@@ -1,7 +1,7 @@
 {
   "name": "svelte-remixicon",
-  "description": "An icon library for Svelte/SvelteKit based on Remix Icon. Consists of more than 2700 icons.",
-  "version": "2.4.1",
+  "description": "An icon library for Svelte/SvelteKit based on Remix Icon. Consists of more than 2800 icons.",
+  "version": "2.5.0",
   "license": "MIT",
   "main": "dist/index.js",
   "author": {
