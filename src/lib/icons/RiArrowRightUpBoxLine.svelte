@@ -15,8 +15,8 @@ fill={color}
 aria-label={label ? label : undefined}
 aria-hidden={!label ? 'true' : undefined}
 role={label ? 'img' : undefined}
-class="remixicon ri-file-mark-line {customClass}"
+class="remixicon ri-arrow-right-up-box-line {customClass}"
 {...$$restProps}
 >
-<path d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 4H5V20H19V4H14V13L10.5 11L7 13V4Z"></path>
+<path d="M20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V4C21 3.44772 20.5523 3 20 3ZM5 19V5H19V19H5ZM16 8V16H14V11.4142L8.70711 16.7071L7.29289 15.2929L12.5858 10H8V8H16Z"></path>
 </svg>
