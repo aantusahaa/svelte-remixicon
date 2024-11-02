@@ -1,3 +1,7 @@
+# 2.6.1
+
+- Update dev dependencies.
+
 # 2.6.0
 
 - New Icons! (Check Remixicon changelog [v4.5.0](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.5.0) & [v4.4.0](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.4.0))
