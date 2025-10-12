@@ -1,3 +1,7 @@
+# 2.7.1
+
+- Update dev dependencies.
+
 # 2.7.0
 
 - New Icons! (Check Remixicon changelog [v4.6.0](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.6.0))
