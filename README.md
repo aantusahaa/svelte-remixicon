@@ -1,6 +1,6 @@
 # svelte-remixicon: A vibrant icon library for your Svelte/SvelteKit app
 
-If you're looking for a way to add visually stunning icons to your Svelte/SvelteKit project, you're in luck! `svelte-remixicon` is a comprehensive icon library built with the popular [Remix Icon](https://github.com/Remix-Design/remixicon) pack. With a total of 3058 icons available, you'll have plenty of options to choose from to bring some color and personality to your app.
+If you're looking for a way to add visually stunning icons to your Svelte/SvelteKit project, you're in luck! `svelte-remixicon` is a comprehensive icon library built with the popular [Remix Icon](https://github.com/Remix-Design/remixicon) pack. With a total of 3135 icons available, you'll have plenty of options to choose from to bring some color and personality to your app.
 
 ## Easy installation
 
