@@ -1,3 +1,7 @@
+# 2.9.0
+
+- New Icons! (Check Remixicon changelog [v4.8.0](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.8.0))
+
 # 2.8.0
 
 - New Icons! (Check Remixicon changelog [v4.7.0](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.7.0))
