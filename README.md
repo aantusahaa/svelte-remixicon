@@ -16,14 +16,14 @@ Using `svelte-remixicon` couldn't be simpler. Just import the icons you want to 
 
 ```html
 <script>
-  import { RiRemixiconLine, RiRemixiconFill } from 'svelte-remixicon';
+  import { RiRemixiconLine, RiRemixiconFill } from "svelte-remixicon";
 </script>
 
 <!-- Or (Recommended for faster compilation in dev mode)-->
 
 <script>
-  import RiRemixiconLine from 'svelte-remixicon/RiRemixiconLine.svelte';
-  import RiRemixiconFill from 'svelte-remixicon/RiRemixiconLineFill.svelte';
+  import RiRemixiconLine from "svelte-remixicon/RiRemixiconLine.svelte";
+  import RiRemixiconFill from "svelte-remixicon/RiRemixiconLineFill.svelte";
 </script>
 
 Almost every icon has two variants. One is line: <RiRemixiconLine /> and the
@@ -75,10 +75,10 @@ The icon components themselves do not propagate events. Non-interactive elements
 
 ```html
 <script>
-  import RiRemixiconLine from 'svelte-remixicon/RiRemixiconLine.svelte';
+  import RiRemixiconLine from "svelte-remixicon/RiRemixiconLine.svelte";
 
   function handleClick() {
-    console.log('Icon clicked!');
+    console.log("Icon clicked!");
   }
 </script>
 
@@ -89,4 +89,6 @@ The icon components themselves do not propagate events. Non-interactive elements
 
 ## License
 
-`svelte-remixicon` is licensed under the [MIT License](https://github.com/aantusahaa/svelte-remixicon/blob/main/LICENSE).
+The `svelte-remixicon` licensed under the [MIT License](https://github.com/aantusahaa/svelte-remixicon/blob/main/LICENSE).
+
+The included icon artwork is Copyright © 2017–2026 Remix Design and remains subject to the [Remix Icon License v1.0](https://github.com/Remix-Design/RemixIcon/blob/master/License).

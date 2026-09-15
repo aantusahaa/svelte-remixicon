@@ -1,6 +1,5 @@
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
-import { pascalCase, pascalCaseTransformMerge } from 'pascal-case';
 import iconObject from './remixicon.glyph.json' with { type: 'json' };
 
 const indexPath = path.resolve('./src/lib/index.js');
@@ -33,11 +32,8 @@ ${pathMarkup}
 </svg>
 `;
 };
-const pascalCaseName = (name) => {
-  return pascalCase('ri-' + name, {
-    transform: pascalCaseTransformMerge,
-  });
-};
+const pascalCaseName = (name) =>
+  `ri-${name}`.replace(/(^|-)(\w)/g, (_, __, char) => char.toUpperCase());
 
 let main = '';
 (async () => {
